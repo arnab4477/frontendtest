@@ -11,8 +11,16 @@ export const useMoveListStore = defineStore('counter', () => {
     return moveList.value.length === 0;
   });
 
+  /**
+   * This function takes a move as a parameter and adds it to the moveList
+   * array in track the moves
+   */
   function addMoves(move: string) {
-    moveList.value.push(move);
+    // The new move's index should be one more than the list's length
+    // This will make sure to track the order of the clicked moves
+    const moveListLength = moveList.value.length;
+    const newMove = `${moveListLength + 1}. ${move}`;
+    moveList.value.push(newMove);
   }
 
   return { moves, addMoves, isMoveListEmpty };
