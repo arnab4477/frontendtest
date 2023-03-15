@@ -1,5 +1,15 @@
-#app {
+html,
+body {
+  background-color: #38541b;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --dark-square-bg-color: #5e8436;
+  --font-color-dark-square: rgba(255, 255, 255, 0.8);
+  --light-square-bg-color: rgb(226, 226, 226);
+  --font-color-light-square: rgba(0, 0, 0, 0.8);
+  --highlighted-square-bg-color: rgb(181, 187, 4);
 }
