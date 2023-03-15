@@ -19,7 +19,7 @@ const { moves, isMoveListEmpty } = storeToRefs(store);
 
 <style scoped>
 .sidebar-container {
-  height: 90vh;
+  height: 95vh;
   width: 375px;
   overflow-x: hidden;
   overflow-y: auto;

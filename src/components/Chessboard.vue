@@ -73,6 +73,7 @@ function handleSquareClick(e: Event) {
   width: 12.5%;
   height: 100%;
   padding: 4.5%;
+  font-size: 16px;
 }
 
 .square:hover {
@@ -96,6 +97,11 @@ function handleSquareClick(e: Event) {
     width: 95%;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    box-shadow: 0 0 10px 2.5px rgba(14, 14, 14, 0.782);
+  }
+  .square {
+    font-size: 10px;
   }
 }
 </style>
